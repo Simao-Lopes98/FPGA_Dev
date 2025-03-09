@@ -1,0 +1,1 @@
+include $(TOP)/Make.icestick.rules
