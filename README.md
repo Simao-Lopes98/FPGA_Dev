@@ -4,7 +4,7 @@
 - The latest ICE40 FPGA docs can be found here: https://www.latticesemi.com/Products/FPGAandCPLD/iCE40
 - Documentation resources can be found here: https://github.com/johnwinans/VerilogNotes
 - Original repo and packages from: https://github.com/johnwinans/Verilog-Examples 
-- Kudo to: https://github.com/johnwinans
+- Kudos to: https://github.com/johnwinans
 
 ## Install from packages (where available)
 
