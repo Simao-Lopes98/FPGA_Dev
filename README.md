@@ -7,7 +7,7 @@
 
 ## Install from packages (where available)
 
-On Ubuntu 22.04.2 LTS and on a Raspberry PI running 64-bit Debian GNU/Linux 11 (bullseye), I was able to install the required tools like this:
+On Ubuntu 22.04.2 LTS (WSL):
 
 ```
 sudo apt install iverilog
@@ -45,8 +45,12 @@ the 'clk' signal.
 
 # Program
 
-To program the ICEstick path to the respective directory and use the following promp:
+To program the ICEStick path to the respective directory and use the following promp:
 
 ```
 make program
 ```
+
+
+If you are using WSL and to configure USB passthrough visit: 
+https://learn.microsoft.com/en-us/windows/wsl/connect-usb
