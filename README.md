@@ -3,7 +3,8 @@
 - These are the examples for a Verilog tutorial on [YouTube](https://www.youtube.com/playlist?list=PL3by7evD3F52On-ws9pcdQuEL-rYbNNFB).
 - The latest ICE40 FPGA docs can be found here: https://www.latticesemi.com/Products/FPGAandCPLD/iCE40
 - Documentation resources can be found here: https://github.com/johnwinans/VerilogNotes
-- Original repo and packages from: https://github.com/johnwinans/Verilog-Examples
+- Original repo and packages from: https://github.com/johnwinans/Verilog-Examples 
+- Kudo to: https://github.com/johnwinans
 
 ## Install from packages (where available)
 
