@@ -1,8 +1,12 @@
-/* PWM Generator */
+/* top.v
+
+Top module for PWM.
+
+*/
 
 module top (
     input clk,
-    output led
+    output wire led
     );
     
     reg[7:0] duty = 128; // 50% duty cycle
