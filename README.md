@@ -8,7 +8,14 @@
 
 ## Install from packages (where available)
 
-On Ubuntu 22.04.2 LTS (WSL):
+On Ubuntu 22.04.2:
+
+First update and upgrade Linux packages
+```
+sudo apt update
+sudo apt upgrade
+```
+Second install the following packages
 
 ```
 sudo apt install iverilog
