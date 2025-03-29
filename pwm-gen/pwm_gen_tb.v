@@ -9,9 +9,11 @@ Test bench for PWM module.
 module tb();
 
     reg clk;        // the free running clock
+    reg[7:0] duty = 128;
 
-    counter uut (
-        .clk(clk)
+    pwm_gen uut (
+        .clk(clk),
+        .duty
         // don't need to connect every signal here if not want to
         );
 

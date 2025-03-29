@@ -15,5 +15,6 @@ module top (
         .clk (clk),
         .duty (duty),
         .pwm (led)
-    )
+    );
+    
 endmodule

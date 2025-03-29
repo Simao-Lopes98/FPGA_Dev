@@ -6,7 +6,7 @@ include $(TOP)/Make.rules
 
 FILES= \
 	top.v \
-	counter.v
+	pwm_gen.v
 
 all:: top.bin
 
@@ -16,10 +16,10 @@ top.json: $(FILES)
 timing: top.asc
 	icetime -tmd $(DEVICE) $^
 
-counter_tb.vvp: counter_tb.v counter.v
+pwm_gen_tb.vvp: pwm_gen_tb.v pwm_gen.v
 	iverilog -o $@ $^
 
-plot: counter_tb.vcd
+plot: pwm_gen_tb.vcd
 	gtkwave $^
 
 prog: top.bin
