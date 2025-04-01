@@ -1,0 +1,3 @@
+set_io hwclk 52
+
+set_io led0 118

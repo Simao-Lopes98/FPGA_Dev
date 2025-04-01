@@ -5,16 +5,16 @@ Top module for PWM.
 */
 
 module top (
-    input clk,
-    output wire led
+    input wire hwclk,
+    output wire led0
     );
     
     reg[7:0] duty = 128; // 50% duty cycle
 
     pwm_gen pwm_inst (
-        .clk (clk),
+        .clk (hwclk),
         .duty (duty),
-        .pwm (led)
+        .pwm (led0)
     );
     
 endmodule
