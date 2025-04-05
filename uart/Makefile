@@ -8,6 +8,7 @@ include $(TOP)/Make.rules
 FILES= \
 	clk_presc.v\
 	blink.v\
+	uart_tx.v\
 	top.v
 
 all:: top.bin
