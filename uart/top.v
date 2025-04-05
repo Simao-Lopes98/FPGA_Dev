@@ -7,12 +7,16 @@
 
 module top (
     input wire hwclk,
-    output wire led0,
+    output wire [3:0] led,
 );
+    // Turn off all LEDs
+    assign led[3:1] = 0;
+    
     // Use blink module
+    
     blink blink_m (
         .clk (hwclk),
-        .led (led0)
+        .led (led[0])
     );
 
 endmodule
