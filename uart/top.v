@@ -5,7 +5,7 @@
  */
 
 
-module moduleName (
+module top (
     input wire hwclk,
     output wire led0,
 );

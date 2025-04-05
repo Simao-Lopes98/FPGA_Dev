@@ -7,7 +7,8 @@ include $(TOP)/Make.rules
 
 FILES= \
 	clk_presc.v\
-	blink.v
+	blink.v\
+	top.v
 
 all:: top.bin
 
