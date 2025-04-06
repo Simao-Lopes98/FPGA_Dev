@@ -19,10 +19,10 @@ top.json: $(FILES)
 timing: top.asc
 	icetime -tmd $(DEVICE) $^
 
-clk_presc_tb.vvp: clk_presc_tb.v clk_presc.v
+top_tb.vvp: top_tb.v clk_presc.v uart_tx.v blink.v top.v
 	iverilog -o $@ $^
 
-plot: clk_presc_tb.vcd
+plot: top_tb.vcd
 	gtkwave $^
 
 prog: top.bin
