@@ -18,7 +18,7 @@ module blink (
         begin
         count <= count + 1;
 
-        if (count == 6000000 &&)
+        if (count == 6000000)
             begin
             led <= ~led;
             count <= 0;

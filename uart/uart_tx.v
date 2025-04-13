@@ -23,8 +23,14 @@ module uart_tx (
 
     reg [2:0] present_state, next_state = IDLE; // State registers
 
+    // Update state on clock
+    always @(posedge clk) begin
+        present_state <= next_state;
+    end
+
     // Runs when present_state changes
-    always @(present_state, send_latched, tx, dataIndex) begin
+    always @(*) begin
+        next_state = present_state; // default to hold state
         case (present_state)
         IDLE:
         begin
@@ -64,7 +70,6 @@ module uart_tx (
     end
 
      always @(posedge clk ) begin
-        present_state <= next_state; // Update present state
         case (present_state)
             IDLE:
             begin
