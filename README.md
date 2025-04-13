@@ -6,6 +6,11 @@
 - Original repo and packages from: https://github.com/johnwinans/Verilog-Examples 
 - Kudos to: https://github.com/johnwinans
 
+# iCEstick Evaluation Board
+
+![image](https://github.com/user-attachments/assets/f8377aca-dbc5-4fd2-8f2d-b29c184d58db)
+
+
 ## Install from packages (where available)
 
 On Ubuntu 22.04.2:
