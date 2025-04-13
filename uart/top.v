@@ -22,6 +22,7 @@ module top (
     // Use blink module
     blink blink_m (
         .clk (hwclk),
+        .btn (btn),
         .led (led[0])
     );
 
