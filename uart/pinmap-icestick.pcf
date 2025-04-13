@@ -1,0 +1,13 @@
+# LEDs
+set_io led[0] 99  # red
+set_io led[1] 98  # red
+set_io led[2] 97  # red
+set_io led[3] 96  # red
+#set_io led[4] 95  # green
+
+# Note: pin 5 and 11 are ground, pins 6 and 12 are Vcc
+# PMOD
+set_io tx 78 # PIO1_02
+set_io btn 79 # PIO1_03
+
+set_io hwclk 21

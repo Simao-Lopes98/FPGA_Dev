@@ -1,0 +1,6 @@
+# LEDs
+set_io led0 99  # red
+
+# Note: pin 5 and 11 are ground, pins 6 and 12 are Vcc
+# PMOD
+set_io btn 87 # PIO1_06
