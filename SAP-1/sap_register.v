@@ -12,7 +12,7 @@ module sap_register(
     inout [7:0] DATA,
     output [7:0] REG_OUT,
     input latch,
-    inout enable
+    input enable
 );
 
 // instantion module blueprint
@@ -25,7 +25,7 @@ module sap_register(
 //     .enable()
 //     );
 
-// register
+// actual register
 reg [7:0] r;
 
 always @(posedge clk ) begin
@@ -33,13 +33,13 @@ always @(posedge clk ) begin
         r <= 0; // Set to known state
     end else begin
         if (latch) begin
-            r <= DATA
+            r <= DATA;
         end
     end
 end
 
 // Set data to high impedance mode if enable is not set.
-assign DATA = (enable) ? r : 8'b11111111;
+assign DATA = (enable) ? r : 8'bZ;
 assign REG_OUT = r;
 
 endmodule
