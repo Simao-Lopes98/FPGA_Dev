@@ -40,14 +40,14 @@ set_io gpio_05 115  # PIO0_05
 ## J3
 ## set_io J3_1 3.3V
 ## set_io J3_2 GND
-#set_io J3_3 62  # PIO2_17
-#set_io J3_4 61  # PIO2_16
-#set_io J3_5 60  # PIO2_15
-#set_io J3_6 56  # PIO2_14
-#set_io J3_7 48  # PIO2_13
-#set_io J3_8 47  # PIO2_12
-#set_io J3_9 45  # PIO2_11
-#set_io J3_10 44  # PIO2_10
+set_io led0 62  # PIO2_17
+set_io led1 61  # PIO2_16
+set_io led2 60  # PIO2_15
+set_io led3 56  # PIO2_14
+set_io led4 48  # PIO2_13
+set_io led5 47  # PIO2_12
+set_io led6 45  # PIO2_11
+set_io led7 44  # PIO2_10
 
 ## PMOD
 ## Note: pin 5 and 11 are ground, pins 6 and 12 are Vcc

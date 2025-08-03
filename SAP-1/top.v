@@ -5,47 +5,48 @@ Top module for the SAP-1.
 */
 
 // macros
-`define RESET gpio_02
-`define LATCH gpio_03
-`define ENABLE gpio_04
 
 module top (
-    input wire hwclk,
-    input wire `RESET, // reset
-    input wire `LATCH, // latch
-    input wire `ENABLE  // enable
+    input wire clk,
+    input wire reset, // reset
+    input wire latch, // latch
+    input wire enable  // enable
     ); 
 
-reg [31:0] presclares = 2;
-wire pres_clk;
 wire [7:0] data_out;
 wire [7:0] w_bus; 
-reg [7:0] w_driver;
-
-// prescale clk
-// clk_pres clk_pres_inst0(
-//     .clk(hwclk),
-//     .pre(presclares),
-//     .out_clk(pres_clk)
-//     );
+reg [7:0] w_driver;     // Test driver
 
 sap_register sap_register_inst0(
-    .clk(hwclk),
-    .reset(`RESET),
+    .clk(clk),
+    .reset(reset),
     .DATA(w_bus),
     .REG_OUT(data_out),
-    .latch(`LATCH),
-    .enable(`ENABLE)
+    .latch(latch),
+    .enable(enable)
     );
 
-always @(posedge hwclk) begin
-    if (`RESET) begin
+always @(posedge clk) begin
+    if (reset) begin
         w_driver <= 8'b01000010;
-    end else if (`LATCH) begin
+    end else if (latch) begin
         w_driver <= w_driver + 1;
     end
 end
 
-assign w_bus = (`LATCH) ? w_driver : 8'bZ;
+assign w_bus = (latch) ? w_driver : 8'bZ;
+
+byte_led byte_led_inst0(
+    .data(data_out),
+    .led0(led00),
+    .led1(led01),
+    .led2(led02),
+    .led3(led03),
+    .led4(led04),
+    .led5(led05),
+    .led6(led06),
+    .led7(led07)
+    );
+
 
 endmodule

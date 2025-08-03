@@ -14,10 +14,10 @@ module tb();
     reg enable = 0;
 
     top uut (
-        .hwclk(clk),
-        .gpio_02(reset),
-        .gpio_03(latch),
-        .gpio_04(enable)
+        .clk(clk),
+        .reset(reset),
+        .latch(latch),
+        .enable(enable)
         );
 
     initial begin
