@@ -21,6 +21,7 @@ module clk_pres (
 
     // Always block
     always @(posedge clk) begin
+        
         if (counter == pre) begin
             out_clk <= 1;
             counter <= 0;

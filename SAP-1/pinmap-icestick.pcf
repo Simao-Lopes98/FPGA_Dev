@@ -31,7 +31,7 @@ set_io hwclk 21   # 12 MHz clock
 set_io gpio_02 112  # PIO0_02 
 set_io gpio_03 113  # PIO0_03 
 set_io gpio_04 114  # PIO0_04 
-#set_io J1_6 115  # PIO0_05 
+set_io gpio_05 115  # PIO0_05 
 #set_io J1_7 116  # PIO0_06 PMOD pin 7
 #set_io J1_8 117  # PIO0_07 PMOD pin 8
 #set_io J1_9 118  # PIO0_08 PMOD pin 9
