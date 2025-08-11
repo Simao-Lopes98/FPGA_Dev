@@ -3,6 +3,7 @@
 sap_register.v
 
 Module for the SAP register
+May be used for A, B and output registers
 
 */
 

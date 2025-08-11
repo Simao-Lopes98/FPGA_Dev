@@ -14,10 +14,11 @@ module tb();
     reg enable = 0;
 
     top uut (
-        .clk(clk),
-        .reset(reset),
-        .latch(latch),
-        .enable(enable)
+        .CLK(clk),
+        .RESET(reset),
+        .LATCH(latch),
+        .ENABLE(enable)
+        // Dont need to connet LED
         );
 
     initial begin

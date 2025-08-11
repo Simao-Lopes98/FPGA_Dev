@@ -5,7 +5,14 @@ include $(TOP)/Make.rules
 
 .PHONY: all clean burn world timings
 
-FILES= top.v sap_register.v byte_led.v
+# workspace directories
+CODE_DIR = code/
+
+TEST_BENCH_DIR = test_bench/
+
+FILES = $(CODE_DIR)top.v \
+		$(CODE_DIR)sap_register.v \
+		$(CODE_DIR)byte_led.v
 
 all:: top.bin
 
@@ -15,7 +22,7 @@ top.json: $(FILES)
 timing: top.asc
 	icetime -tmd $(DEVICE) $^
 
-sap_top_tb.vvp: sap_top_tb.v top.v sap_register.v byte_led.v
+sap_top_tb.vvp: $(TEST_BENCH_DIR)sap_top_tb.v $(FILES)
 	iverilog -o $@ $^
 
 plot: sap_top_tb.vcd
