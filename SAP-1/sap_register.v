@@ -39,7 +39,7 @@ always @(posedge clk ) begin
 end
 
 // Set data to high impedance mode if enable is not set.
-assign DATA = (enable) ? r : 8'bZ;
+assign DATA = (enable) ? r : 8'bZZZZZZZZ;
 assign REG_OUT = r;
 
 endmodule
