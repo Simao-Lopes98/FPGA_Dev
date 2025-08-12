@@ -12,7 +12,8 @@ TEST_BENCH_DIR = test_bench/
 
 FILES = $(CODE_DIR)top.v \
 		$(CODE_DIR)sap_register.v \
-		$(CODE_DIR)byte_led.v
+		$(CODE_DIR)byte_led.v \
+		$(CODE_DIR)sap_alu.v
 
 all:: top.bin
 
