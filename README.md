@@ -39,23 +39,13 @@ You can compile/clean all the projects in this REPO from the top level directory
 using `make` and `make clean`.  If you want to only build one then go into its
 directory and `make`, `make clean` from there.
 
-# To simulate an application and view a waveform of it running 
+# Simulate
+
+To simulate navigate to the disered project dir and perform the following:
 
 ```
-cd blinky2
 make plot
 ```
-
-Then, in gtkwave, open (double-click) the 'tb' object in the tree, click on 'uut'. 
-
-Then, in the signals box below click on the 'clk' signal and ctrl-click on 'counter[24:0]'
-(so that they are both selected at the same time) and click the Append button at the 
-bottom left.  
-
-At this point, you can zoom and scroll around the waveform on the right to see the 
-clock signal ticking and the counter advancing on the rising/positive edge of 
-the 'clk' signal.
-
 # Program
 
 To program the ICEStick path to the respective directory and use the following promp:
