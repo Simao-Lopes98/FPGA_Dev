@@ -2,6 +2,8 @@
 
 This repository contains an implementation of the SAP-1 (Simple As Possible-1) computer architecture using FPGA.
 
+Big thanks to [Phil Does Tech (YouTube)](https://www.youtube.com/@phildoestech3990)
+
 ## Overview
 
 SAP-1 is a basic 8-bit computer designed for educational purposes. It demonstrates fundamental concepts of computer architecture, including:
@@ -10,8 +12,6 @@ SAP-1 is a basic 8-bit computer designed for educational purposes. It demonstrat
 - Simple control unit
 - Basic ALU operations
 - Memory and registers
-
-- Big thanks to [Phil Does Tech (YouTube)](https://www.youtube.com/@phildoestech3990)
 
 ## Features
 
