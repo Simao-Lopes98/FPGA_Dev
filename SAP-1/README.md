@@ -11,6 +11,8 @@ SAP-1 is a basic 8-bit computer designed for educational purposes. It demonstrat
 - Basic ALU operations
 - Memory and registers
 
+- Big thanks to [Phil Does Tech (YouTube)](https://www.youtube.com/@phildoestech3990)
+
 ## Features
 
 - 8-bit data bus
@@ -26,9 +28,4 @@ SAP-1 is a basic 8-bit computer designed for educational purposes. It demonstrat
 
 ## References
 
-- [SAP-1 Architecture (YouTube)](https://www.youtube.com/watch?v=KjIvqT3c9Rg)
 - "Digital Computer Electronics" by Albert Paul Malvino
-
-## License
-
-This project is licensed under the MIT License.
