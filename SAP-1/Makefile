@@ -6,9 +6,9 @@ include $(TOP)/Make.rules
 .PHONY: all clean burn world timings
 
 # workspace directories
-CODE_DIR = code/
+CODE_DIR = src/
 
-TEST_BENCH_DIR = test_bench/
+TEST_BENCH_DIR = test/
 
 FILES = $(CODE_DIR)top.v \
 		$(CODE_DIR)sap_register.v \

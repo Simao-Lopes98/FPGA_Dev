@@ -124,7 +124,7 @@ sap_register y_reg(
 sap_alu sap_alu_inst (
     .a_reg(a_reg_out),
     .b_reg(b_reg_out),
-    .data(alu_data_out),
+    .data(w_bus),
     .enable(alu_enable),
     .sub(alu_sub_enable),
     .carry_flag(carry_flag),

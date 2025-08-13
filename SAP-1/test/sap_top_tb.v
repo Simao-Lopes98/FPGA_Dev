@@ -87,7 +87,7 @@ module tb();
         b_latch <= 1;       /* load value from W-Bus to B reg */
         #13;
         b_latch <= 0;
-        w_driver_latch <= 0;
+        w_driver_latch <= 0;/* disable w-driver to free W-Bus */
         alu_enable <= 1;    /* enable ALU */
         #15
         alu_enable <= 0;

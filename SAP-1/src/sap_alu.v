@@ -34,6 +34,6 @@ wire [7:0] alu_result;
 assign {carry_flag, alu_result} = (sub) ? alu_minus : alu_plus;
 assign zero_flag = ({carry_flag, alu_result} == 9'd0) ? 1'b1 : 1'b0;
 
-assign DATA = (enable) ? alu_result : 8'bZZZZZZZZ;
+assign data = (enable) ? alu_result : 8'bZZZZZZZZ;
 
 endmodule
