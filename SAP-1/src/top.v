@@ -46,7 +46,6 @@ wire [7:0] mar_reg_out;
 wire [7:0] instruct_reg_out;
 wire [7:0] x_reg_out;
 wire [7:0] y_reg_out;
-wire [7:0] alu_data_out;
 
 
 /* 
